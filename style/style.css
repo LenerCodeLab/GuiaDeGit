@@ -1,0 +1,95 @@
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Cuerpo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.Completo {
+  width: 100%;
+  height: 100%;
+  background-color: #161b22;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.terminal {
+  background-color: #161b22;
+  border-radius: 0px 0px 8px 8px;
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 2;
+}
+strong {
+  color: #58a6ff;
+}
+.comando {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+code {
+  color: #ffffff;
+}
+.hash {
+  color: #a3a3a3;
+}
+.emoji {
+  margin-right: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #58a6ff;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px 15px;
+  font-family: monospace;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.terminal-title a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.terminal-lang {
+  background-color: #333;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.terminal-line {
+  border: none;
+  border-bottom: 1px solid #555;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .Cuerpo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .comando {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin-bottom: 10px;
+  }
+}
