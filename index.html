@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style/style.css"
+    />
+    <title>Comandos Git</title>
+  </head>
+
+  <body>
+    <h1>📘 Comandos Básicos de Git</h1>
+    <span class="terminal-title"
+      >📕 Git y GitHub —
+      <a
+        href="https://github.com/LenerCodeLab"
+        target="_blank"
+        >LenerCodeLab</a
+      ></span
+    >
+    <br />
+    <div class="Cuerpo">
+      <div class="Completo">
+        <div class="terminal-header">
+          <span class="terminal-title"
+            >### 🟢 Comenzando tu proyecto con Git
+          </span>
+          <span class="terminal-lang">Bash</span>
+        </div>
+        <hr class="terminal-line" />
+        <div class="terminal">
+          <div class="comando">
+            <code><strong>git</strong> init</code>
+            <code class="hash"># Inicializa un nuevo repositorio Git</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> clone &lt;repo-url&gt;</code>
+            <code class="hash"># Clona un repositorio desde una URL</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> config --global user.name ""</code>
+            <code class="hash"># Configura tu nombre</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> config --global user.email ""</code>
+            <code class="hash"># Configura tu email</code>
+          </div>
+        </div>
+      </div>
+      <div class="Completo">
+        <div class="terminal-header">
+          <span class="terminal-title"
+            >### 🛠️ Comandos esenciales para el trabajo diario
+          </span>
+          <span class="terminal-lang">Bash</span>
+        </div>
+        <hr class="terminal-line" />
+        <div class="terminal">
+          <div class="comando">
+            <code><strong>git</strong> status</code>
+            <code class="hash"># Muestra el estado de los cambios</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> add .</code>
+            <code class="hash"># Agregar todos los archivos</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> commit -m "mensaje"</code>
+            <code class="hash"># Confirma los cambios con un mensaje</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> log --oneline</code>
+            <code class="hash"># Historial visual</code>
+          </div>
+        </div>
+      </div>
+      <div class="Completo">
+        <div class="terminal-header">
+          <span class="terminal-title"
+            >### 🌿 Creación y manejo de versiones paralelas del proyecto
+          </span>
+          <span class="terminal-lang">Bash</span>
+        </div>
+        <hr class="terminal-line" />
+        <div class="terminal">
+          <div class="comando">
+            <code><strong>git</strong> branch</code>
+            <code class="hash"># Lista las ramas</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> checkout &lt;nombre&gt;</code>
+            <code class="hash"># Cambia a una rama</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> checkout -b &lt;nombre&gt;</code>
+            <code class="hash"># Crear y cambiar de rama</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> switch &lt;nombre&gt;</code>
+            <code class="hash"># (Moderno)Cambia a una rama</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> switch -c &lt;nombre&gt;</code>
+            <code class="hash"># (Moderno) crear y cambiar</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> branch -d &lt;nombre&gt;</code>
+            <code class="hash"># Elimina una rama</code>
+          </div>
+        </div>
+      </div>
+      <div class="Completo">
+        <div class="terminal-header">
+          <span class="terminal-title"
+            >### 🤝 Trabajo en equipo con repositorios remotos
+          </span>
+          <span class="terminal-lang">Bash</span>
+        </div>
+        <hr class="terminal-line" />
+        <div class="terminal">
+          <div class="comando">
+            <code><strong>git</strong> merge &lt;rama&gt;</code>
+            <code class="hash"># Fusiona los cambios de una rama</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> remote add origin &lt;url&gt;</code>
+            <code class="hash"># Añade un repositorio remoto</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> push -u origin main</code>
+            <code class="hash"># Subir y vincular rama principal</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> push origin &lt;rama&gt;</code>
+            <code class="hash"># Subir cambios a la rama</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> pull</code>
+            <code class="hash"># Trae y fusiona cambios del remoto</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> fetch</code>
+            <code class="hash"># Descargar sin fusionar</code>
+          </div>
+        </div>
+      </div>
+      <div class="Completo">
+        <div class="terminal-header">
+          <span class="terminal-title"
+            >### 🧹 Volver atrás y restaurar tu proyecto
+          </span>
+          <span class="terminal-lang">Bash</span>
+        </div>
+        <hr class="terminal-line" />
+        <div class="terminal">
+          <div class="comando">
+            <code><strong>git</strong> reset --hard HEAD</code>
+            <code class="hash"># Descarta todos los cambios locales</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> restore &lt;archivo&gt;</code>
+            <code class="hash"># Restaura archivo</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> reset &lt;archivo&gt;</code>
+            <code class="hash"># Quita del staging</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> reset --soft HEAD~1</code>
+            <code class="hash"># Deshace último commit (mantiene cambios)</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> reset --hard HEAD~1</code>
+            <code class="hash"># Deshace cambios y borra 1 commit</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> revert &lt;commit&gt;</code>
+            <code class="hash"># Revierte un commit</code>
+          </div>
+        </div>
+      </div>
+      <div class="Completo">
+        <div class="terminal-header">
+          <span class="terminal-title"
+            >### ✨ Herramientas poderosas para usuarios intermedios y avanzados
+          </span>
+          <span class="terminal-lang">Bash</span>
+        </div>
+        <hr class="terminal-line" />
+        <div class="terminal">
+          <div class="comando">
+            <code><strong>git</strong> diff</code>
+            <code class="hash"># Compara commits, ramas o archivos</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> show &lt;hash&gt;</code>
+            <code class="hash"># Muestra detalles de un commit</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> stash</code>
+            <code class="hash"># Guarda cambios temporales</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> stash pop</code>
+            <code class="hash"># Aplica y elimina el stash</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> cherry-pick &lt;hash&gt;</code>
+            <code class="hash"># Aplica un commit específico</code>
+          </div>
+          <div class="comando">
+            <code><strong>git</strong> rebase &lt;base&gt;</code>
+            <code class="hash"># Reaplica commits sobre otra base</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
